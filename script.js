@@ -32,7 +32,6 @@ window.onload = async () => {
       start.style.display = "flex";
 
       if (my_ip && ip_data) {
-        push("Haha", "Gottem")
         push("IP Address", ip_data.query);
         push("Hostname", my_ip.YourFuckingHostname);
         push("Country", `${ip_data.country} (${ip_data.countryCode})`);
@@ -89,9 +88,7 @@ window.onload = async () => {
       if (ip_data) push("Timezone", ip_data.timezone);
       push("Timezone Offset", date.getTimezoneOffset() / 60, " hours");
       push("Hacked", pick(hacked_statements));
-      push("Stop playing", "Roblox");
-      push("You are", "Cringe");
-      push("Current Status", "\u{D9E}");
+      push("Go fuck", "yourself");
     };
 
     start.onclick = async () => {
