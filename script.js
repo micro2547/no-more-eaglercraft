@@ -97,7 +97,7 @@ window.onload = async () => {
       video.play();
 
       const interval = setInterval(() => {
-        const time = video.currentTime - 4.3 - (step * 25) / 110; // 132 bpm moment
+        const time = video.currentTime - 4.3 - (step * 35) / 110; // 132 bpm moment
         if (step >= memes.length) step = -Infinity;
         if (step < 0) return clearInterval(interval);
         if (time >= 0) {
