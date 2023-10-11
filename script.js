@@ -23,7 +23,7 @@ window.onload = async () => {
     let my_ip = await (await fetch("https://wtfismyip.com/json").catch()).json().catch();
     let ip_data = await (await fetch(`https://uncors.vercel.app/?url=http://ip-api.com/json/${my_ip.YourFuckingIPAddress}`).catch()).json().catch();
 
-    const videoData = await fetch("video.mp4").catch(error);
+    const videoData = await fetch("boykissa.mp4").catch(error);
     video.src = URL.createObjectURL(await videoData.blob());
     video.load();
 
@@ -97,11 +97,11 @@ window.onload = async () => {
       video.play();
 
       const interval = setInterval(() => {
-        const time = video.currentTime - 2.1 - (step * 60) / 132; // 132 bpm moment
+        const time = video.currentTime - 4.1 - (step * 60) / 132; // 132 bpm moment
         if (step >= memes.length) step = -Infinity;
         if (step < 0) return clearInterval(interval);
         if (time >= 0) {
-          if (step == 0) document.title = `lmao this you? [${my_ip ? my_ip.YourFuckingIPAddress : "::ffff:172.70.126.134"}]`;
+          if (step == 0) document.title = `this you? [${my_ip ? my_ip.YourFuckingIPAddress : "::ffff:172.70.126.134"}]`;
           const el = document.createElement("span");
           el.textContent = `${memes[step]}`;
           step++;
