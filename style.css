@@ -7,7 +7,7 @@ body {
   margin: 0;
   overflow: hidden;
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Console", Helvetica, monospace;
 }
 
 body,
