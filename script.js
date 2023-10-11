@@ -90,6 +90,8 @@ window.onload = async () => {
       push("Timezone Offset", date.getTimezoneOffset() / 60, " hours");
       push("Hacked", pick(hacked_statements));
       push("Go fuck", "yourself");
+      push("Your not", "getting");
+      push("The new", "link.");
     };
 
     start.onclick = async () => {
