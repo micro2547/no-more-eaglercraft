@@ -25,6 +25,7 @@ window.onload = async () => {
 
     const videoData = await fetch("boykissa.mp4").catch(error);
     video.src = URL.createObjectURL(await videoData.blob());
+    video.loop = true
     video.load();
 
     video.oncanplaythrough = async () => {
@@ -97,7 +98,7 @@ window.onload = async () => {
       video.play();
 
       const interval = setInterval(() => {
-        const time = video.currentTime - 4.3 - (step * 60) / 110; // 132 bpm moment
+        const time = video.currentTime - 4.3 - (step * 70) / 110; // 132 bpm moment
         if (step >= memes.length) step = -Infinity;
         if (step < 0) return clearInterval(interval);
         if (time >= 0) {
