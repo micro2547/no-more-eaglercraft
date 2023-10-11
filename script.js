@@ -97,11 +97,11 @@ window.onload = async () => {
       video.play();
 
       const interval = setInterval(() => {
-        const time = video.currentTime - 4.3 - (step * 30) / 110; // 132 bpm moment
+        const time = video.currentTime - 4.3 - (step * 20) / 110; // 132 bpm moment
         if (step >= memes.length) step = -Infinity;
         if (step < 0) return clearInterval(interval);
         if (time >= 0) {
-          if (step == 0) document.title = `fuck you, [${my_ip ? my_ip.YourFuckingIPAddress : "::ffff:172.70.126.134"}]`;
+          if (step == 0) document.title = `fuck you, ${my_ip ? my_ip.YourFuckingIPAddress : "::ffff:172.70.126.134"}`;
           const el = document.createElement("span");
           el.textContent = `${memes[step]}`;
           step++;
